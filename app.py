@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import os
+print("current folder:", os.getcwd())
 app= Flask(__name__)
 @app.route("/")
 def home():
