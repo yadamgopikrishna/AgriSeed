@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Farmer Registration</h1>
+
+        <form action="/register" method="POST">
+
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="village">Village</label><br>
+            <input type="text" id="village" name="village" placeholder="Enter your village" required><br><br>
+
+            <label for="district">District</label><br>
+            <input type="text" id="district" name="district" placeholder="Enter your district" required><br><br>
+
+            <label for="state">State</label><br>
+            <input type="text" id="state" name="state" placeholder="Enter your state" required><br><br>
+
+            <label for="pincode">Pincode</label><br>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password</label><br>
+            <div class="password-box">
+                <input type="password" id="password" name="password" placeholder="Create password" required>
+                <span class="toggle-password">👁</span>
+            </div>
+
+            <label for="confirm_password">Confirm Password</label><br>
+            <div class="password-box">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
+                    required>
+                <span class="toggle-password">👁</span>
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="/login">Sign In</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
