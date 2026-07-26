@@ -86,3 +86,52 @@ button:hover {
 .login-link a:hover {
     text-decoration: underline;
 }
+
+#strength {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#password-rules {
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+}
+
+#password-rules p {
+
+    margin: 5px 0;
+
+}
+
+#confirm-message {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+    padding-right: 40px;
+    /* Space for the eye icon */
+}
+
+.password-box span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* Changes cursor to hand */
+    user-select: none;
+    /* Prevents selecting the icon */
+    font-size: 18px;
+    z-index: 10;
+}
