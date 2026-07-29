@@ -87,13 +87,13 @@ function checkPasswords() {
     }
     else if (password.value === confirmPassword.value) {
 
-        confirmMessage.textContent = "✅ Passwords Match";
+        confirmMessage.textContent = "✅ Password Match";
         confirmMessage.style.color = "green";
 
     }
     else {
 
-        confirmMessage.textContent = "❌ Passwords Do Not Match";
+        confirmMessage.textContent = "❌ Password Does Not Match";
         confirmMessage.style.color = "red";
 
     }
