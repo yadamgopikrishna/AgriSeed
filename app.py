@@ -17,7 +17,7 @@ def register():
         district = request.form["district"]
         state = request.form["state"]
         pincode = request.form["pincode"]
-        password = request.form["password"]
+        
 
         print(fullname)
         print(phone)
@@ -26,7 +26,7 @@ def register():
         print(district)
         print(state)
         print(pincode)
-        print(password)
+        
 
     return render_template("register.html")
 if __name__=="__main__":
