@@ -1,6 +1,4 @@
-from flask import Flask, render_template,request
-import os
-print("current folder:", os.getcwd())
+from flask import Flask, render_template,request,session
 app= Flask(__name__)
 @app.route("/")
 def home():
@@ -16,18 +14,7 @@ def register():
         village = request.form["village"]
         district = request.form["district"]
         state = request.form["state"]
-        pincode = request.form["pincode"]
-        
-
-        print(fullname)
-        print(phone)
-        print(email)
-        print(village)
-        print(district)
-        print(state)
-        print(pincode)
-        
-
+        pincode = request.form["pincode"] 
     return render_template("register.html")
 if __name__=="__main__":
     app.run(debug=True)
